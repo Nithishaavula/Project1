@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing: border-box;
+    }
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .main{
+        background-image:url("123.jpg");
+       background-repeat: no-repeat;
+        background-size:cover;
+        width:100vw;
+        
+
+    }
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    color:white;
+    height:10vh;
+}
+.header i{
+    color:white;
+    padding:1rem;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    height:10vh;
+}
+.one{
+    padding-left: 1rem;
+    text-decoration: none;
+    color:white;
+    padding-right: 1rem;
+}
+.one:hover~a{
+    color:gray;
+}
+button{
+    background-color:blue;
+     padding:1rem 2rem;
+     color:white;
+     cursor: pointer;
+     border-radius:8%;
+     border:none;
+}
+.section1{
+    display:grid;
+    grid-template-rows: 10rem 12rem;
+    justify-content: center;
+    height:80vh;
+    padding:2rem;
+    gap:3rem;
+    margin-top: 5rem;
+    color:white;
+    width:100vw;
+    
+
+}
+.section1a{
+    font-size: larger;
+    height:40vh;
+    display:grid;
+    grid-template-rows: 2rem 2rem;
+    gap:2rem;
+
+
+
+}
+
+
+h2{ padding-top:1rem;
+    font-size:4rem;
+
+}
+.section1b{
+    height:40vh;
+    display:grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    justify-content: center;
+    align-items: center;
+    gap:9rem;
+}
+.section1ba{
+    display:grid;
+    grid-template-rows:2rem 2rem 2rem;
+    justify-content: center;
+    padding:3rem;
+    width:15rem;
+    gap:2rem;
+
+
+}
+.section1ba i{
+    border:2px solid blue;
+    padding:1rem;
+    border-radius: 20%;
+    box-shadow: 0px 0px 1px 1px blue;
+    
+}
+h3{
+    margin-top: 1rem;
+}
+#one{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:2.4rem;
+    margin-left: 1rem;
+}
+.section1a p{
+    color:whitesmoke;
+    font-size: 2rem;
+}
+.section2{
+    display:grid;
+    grid-template-columns:45% 45%;
+    justify-content: center;
+    align-content:center;
+    width:100%;
+
+
+}
+.section2a{
+    display:grid;
+    grid-template-rows: 5rem 5rem 5rem;
+    justify-content: center;
+    font-size: 1.5rem;
+    gap:1rem;
+    
+}
+
+img{
+    border-radius: 5%;
+    margin-bottom: 2%;
+}
+#two{
+    margin-top: 3rem;
+    display:flex;
+    gap:4rem;
+}
+.three{
+    font-size: 2.1rem;
+
+}
+.four{
+    color:gray;
+}
+.section3{
+    display:grid;
+    grid-template-columns: 45% 45%;
+    align-content: center;
+    justify-content: center;
+    gap:2rem;
+    width:100%;
+
+}
+.section3a{
+    display:grid;
+    grid-template-rows: 5rem 5rem 5rem;
+    padding-top: 5rem;
+}
+h1{
+    color:blue;
+}
+.section4{
+    display:grid;
+    grid-template-rows:7rem 20rem;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;}
+.section4a{
+    display:grid;
+    grid-template-columns: 10rem 10rem 10rem 10rem;
+    gap:12rem;
+    background-color:white;
+    margin-right:5rem;
+    
+}
+.section4b{
+    border:1px solid gray;
+    display:grid;
+    justify-content: center;
+    padding:4rem 9rem;
+    gap:1.5rem;
+    border-radius: 5%;
+    
+
+
+
+}
+.section4b i{
+    font-size: 2rem;
+}
+.section4aa{
+    display:grid;
+    justify-content: center;
+    gap:1rem;
+
+} 
+.section4aa p{
+    font-weight: bold;
+}
+.video{
+    margin-top: 8rem;
+    position:relative;
+
+}
+.child{position:absolute;
+    top:10rem;
+    left:10rem;
+    margin: auto;
+
+    color:white;
+
+}
+.child p{
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.section5{
+    display:grid;
+    grid-template-columns:28% 32% 32%;
+    justify-content: center;
+    align-content: center;
+    gap:3rem;
+    height:90vh;
+
+}
+.section5a{
+    display:grid;
+    justify-content: center;
+    align-content: center;
+    gap:2rem;
+    margin-left:0;
+    padding:2rem;
+
+}
+.section5b{
+    display:grid;
+    background-color:lightgray;
+    gap:2rem;
+    align-content: center;
+    justify-content: center;
+    padding:6rem;
+}
+.section5c{
+    display:grid;
+    gap:2rem;
+    align-content: center;
+    justify-content: center;
+    padding:6rem;
+    border:2px solid blue;
+
+}
+.c{color: blue;
+    font-size: 3rem;
+
+}
+.b{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#btn{
+    color:black;
+    background-color: aliceblue;
+    border:2px solid blue;
+    padding:1rem 2rem;
+    margin-top: 2rem;
+}
+#btw{
+    border:2px solid;
+    margin-top: 2rem;
+}
+.section6{
+    height:100vh;
+    width:100%;
+    background-color: aqua;
+    background-image: url(bg\ img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+   
+
+
+}
+#section6{
+    border:1px solid black;
+    border-radius: 0%;
+ 
+}
+.section6a{
+    display:grid;
+    gap:1rem;
+    color:white;
+    font-size: 2.4rem;
+    align-content: center;
+    justify-content: center;
+    height:100vh;
+}
+.section6a p{
+    color:blue;
+    font-weight: bold;
+}
+#section6btn{
+    width:10rem;
+    margin-top: 2rem;
+}
+.footer{
+    background-color: black;
+    color:white;
+    height:50vh;
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    gap:1rem;
+    padding:4rem;
+}
+.footer p{
+    color:gray;
+    padding:1rem;
+}
+.fff{
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content: space-around;
+    padding:4rem 6rem;
+
+}
+.fff a{
+    color:white;
+    text-decoration: none;
+  padding-left: 1rem;
+}
+h6{
+    color:gray;
+}
+.manam{
+    display:grid;
+    grid-template-rows: auto auto auto auto auto auto;
+    gap:4rem;
+    width:100vw;
+}
+.none{color:white;
+display:none;}
+
+
+@media screen and (max-width: 576px) {
+    .manam{gap:4rem;
+
+    }
+    .main{
+        width:100vw;
+        height:180vh;
+    }
+    .header{
+        display:none;
+    }
+    .navbar2{
+        display:none;
+    }
+    .none{display:block;
+        margin-right:2rem;
+        font-size: larger;
+        cursor:pointer;
+    }
+    .none:hover.navbar2{
+        display:block;
+
+    }
+    /* Section 1 (Hero Section) */
+    .section1b {
+        background-size: cover;
+        display:flex;
+        flex-direction: column;
+        height:20vh;
+        gap:1rem;
+        margin-top: 25rem;
+    
+
+    }
+    .text h1 {
+        font-size: 24px;
+    }
+    .text p {
+        font-size: 14px;
+    }
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        width:100vw;
+        gap:2rem;
+        height:100vh;
+    }
+
+    .section2a {
+        width: 100%;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    .section2a .three {
+        font-size: 1.5rem;
+    }
+
+    .section2a .four {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    #two {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    #two h1 {
+        font-size: 1.5rem;
+    }
+
+    .section2b img {
+        width: 90%;
+        height: auto;
+        max-width: 300px;
+        border-radius: 10px;
+    }
+    .section3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+        gap:2rem;
+        width:95vw;
+        height:100vh;
+    }
+    .section3 img{
+        width:90%;
+        height:auto;
+        max-width:300px;
+        border-radius: 10px;
+
+    }
+   
+    .section5b{
+    display:grid;
+    background-color:lightgray;
+    gap:2rem;
+    align-content: center;
+    justify-content: center;
+    padding:
+}
+
+   
+    .video{
+    margin-top: 8rem;
+    position:relative;
+    width:95vw;
+    height:50vh;
+
+}
+.child{position:absolute;
+    top:1rem;
+    left:1rem;
+    margin: auto;
+    color:white;
+    height:100vh;
+
+}
+.child h2,p{
+    font-size:1rem;
+    color:rgb(211, 10, 10);
+}
+.section5{
+    display:flex;
+    flex-direction: column;
+    height:95vh;
+    z-index: 1;
+    margin-top: 40rem;
+    padding:2rem;
+    width:95vw;
+    height:90vh;
+}
+.section5a{
+    margin-bottom: 0%;
+}
+.section6 h4{
+    color:brown;
+
+}
+.footer{
+    display:flex;
+    flex-direction: column;
+    height:150vh;
+    gap:1rem;
+    background-color:black;
+}
+.f3{
+    height:100vh;
+}
+.section4a{
+    display:flex;
+    flex-direction:column;
+    width:50vh;
+    gap:2rem;
+    height:50vh;
+}
+.video{
+    margin-top: 85rem;
+    position:relative;
+    top:0;
+
+}
+.child{
+    position:absolute;
+    top:4rem;
+}
+.section6{
+    margin-top: 45rem;
+    height:90vh;
+    width:95vw;}
+}
+.section6a{
+    padding-left:1rem;
+}
+hr{
+    display:none;
+}
+.fff{padding-top: 10rem;
+}
+
+
+
+</style>
+<body>
+    <div class="manam">
+    <div class="main">
+    <div class="header">
+        <div>
+            <i class="fa-regular fa-envelope"></i>
+             <i>Brand@company.com</i>
+            <i class="fa-solid fa-phone"></i>
+             <i>(+91)123-456-7890</i>
+            <i class="fa-regular fa-clock"></i>
+            <i>Mon-Friday.9am-19pm</i>
+        </div>
+        <div>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+    </div>
+    <hr>
+    <div class="navbar">
+        <div>
+          <h2 class="one" id="one">Jevelin</h2>
+        </div>
+        <div class="navbar2" id="navbar2">
+        
+        <a href="#home" class="one">Home</a>
+        <a href="#about" class="one">About</a>
+        <a href="#services" class="one">Services</a>
+        <a href="#pricing" class="one">Pricing</a>
+        <a href="#contact" class="one">Contact</a>
+       <a href="#Purchase" class="one"> <button>Purchase</button></a>
+        </div>
+        <div class="none">
+            <a href="navbar2.html"><i class="fa-solid fa-bars"></i></a>
+        </div>
+    </div>
+
+    <div class="section1" id="home">
+        <div class="section1a">
+             <center><p>Compliment your ideas with</p></center>
+             <h2 data-aos="zoom-in">Perfect business template</h2>
+        </div>
+       <div class="section1b">
+        <div class="section1ba" data-aos="fade-up">
+            <center> <i class="fa-solid fa-mobile-screen"></i></center>
+           <center> <h3>01.Mobile ready</h3></center>
+           <p>Lorem ipsum dolar sit amet,phasellus</p>
+        </div >
+         <div class="section1ba" data-aos="fade-up">
+           <center><i class="fa-solid fa-ruler-vertical"></i></center>
+            <h3>02.Customizable</h3>
+            <p>Lorem ipsum dolar sit amet,phasellus id erat eu</p>
+
+         </div >
+         <div class="section1ba" data-aos="fade-up">
+            <center><i class="fa-solid fa-cart-shopping"></i></center>
+            <h3>03.Affordable</h3>
+            <p>Lorem ipsum dolar sit amet</p>
+         </div>
+       </div>
+    </div>
+</div>
+<div class="section2" id="about">
+    <div class="section2a">
+        <p class="three">About our main Company goal</p>
+        <p class="four">Vivamus fermentum, augue a gravida gravida, odio erat malesuada est, eu condimentum lorem felis sed risus.</p>
+       <div id="two"> 
+        <div>
+            <h1>20+</h1>
+        <p>Investors</p>
+    </div>
+        <div>
+            <h1>15k</h1>
+            <p>Projects</p>
+        </div>
+        </div>
+    </div>
+    <div class="section2b">
+        <img src="call.jpg" alt="" data-aos="fade-up-left">
+    </div>
+</div>
+<div class="section3">
+    <div class="imggg">
+    <img src="456.jpg" alt="" data-aos="fade-down-right"></div>
+    <div class="section3a">
+        <p class="three">when you put your mind to it</p>
+        <p>Vivamus fermentum, augue a gravida gravida, odio erat malesuada est, eu condimentum lorem felis sed risus.</p>
+       <div> <button>Read more</button></div>
+    </div>
+</div>
+<div class="section4" id="services">
+    <div class="section4aa"><center><p style=color:blue;>To compliment your ideas</p></center>
+        <p class="three">Services we can provide</p>
+    </div>
+    <div class="section4a">
+        <div class="section4b" data-aos="fade-right">
+            <i class="fa-solid fa-paint-roller"></i>
+            <p>Marketing strategies</p>
+            <p class="four">Vivamus fermentum, augue a grav gravida, odio erat malesuada</p>
+        </div>
+        <div class="section4b" data-aos="fade-right">
+            <i class="fa-solid fa-arrow-up-right-dots"></i>
+            <p>Consulting and analysis</p>
+            <p class="four">Vivamus fermentum, augue a grav gravida, odio erat malesuada</p>
+
+        </div>
+        <div class="section4b" data-aos="fade-left">
+            <i class="fa-solid fa-briefcase"></i>
+            <p>Business planning</p>
+            <p class="four">Vivamus fermentum, augue a grav gravida, odio erat malesuada</p>
+        </div>
+        <div class="section4b" data-aos="fade-left">
+            <i class="fa-solid fa-lock-open"></i>
+            <p>30+ years of experience</p>
+            <p class="four">Vivamus fermentum, augue a grav gravida, odio erat malesuada</p>
+        </div>
+    </div>
+</div>
+<div class="video">
+ <video src="video.mp4" height="80%" width="100%" controls class="vid"></video>
+<div class="child"><h2>Video Introduction presentation</h2>
+<center><p>To complement your ideas</p></center>
+</div>
+</div>
+<div class="section5" id="pricing">
+    <div class="section5a">
+        <p class="three">check out our most popular choises</p>
+        <p class="four">Ut et nisi ac dui pulvinar consequat. Curabitur aliquam, felis ut ultricies porta, ante dolor iac</p>
+    </div>
+
+    <div class="section5b">
+        <div>
+        <p class="b">Startup</p>
+        <h3 class="c">$58</h3>
+        <p>Curabitur aliquam, felis ut ultricies porta, ante dolor iaculis ante, ante dolor iaculis anteet frin gilla ligula tortor eget nisi.</p>
+        </div>
+        <div>
+            <p>+ Picture libraby</p>
+            <p>+ 24h support</p>
+            <p>+ Advanced search</p>
+            <p>+ Template library</p>
+            <p>+ 400 GB cloud storage</p>
+            <button id="btn">Choose pricing</button>
+        </div>
+        </div>
+    
+    
+        <div class="section5c">
+            <div>
+            <p class="b">Business</p>
+        <h3 class="c">$120</h3>
+        <p>Curabitur aliquam, felis ut ultricies porta, ante dolor iaculis ante, ante dolor iaculis anteet frin gilla ligula tortor eget nisi.</p>
+        </div>
+        <div>
+            <p>+ Picture libraby</p>
+            <p>+ 24h support</p>
+            <p>+ Advanced search</p>
+            <p>+ Template library</p>
+            <p>+ 400 GB cloud storage</p>
+            <button id="btw">Choose pricing</button>
+    
+        </div>
+        </div>
+        </div>
+    <div class="section6" id="contact">
+        <div class="section6a">
+           <center> <p>To compliment your ideas</p></center>
+            <h4>Perfect business template that you will love with all heart</h4>
+           <center> <button id="section6btn">
+                <i class="fa-solid fa-headphones-simple" style=color:white;></i>   contact us
+            </button></center>
+            </div>
+        </div>
+        </div>
+<div class="footer">
+    <div>
+     <h2 id="one">Jevelin</h2>
+     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam at</p>
+     <i class="fa-brands fa-facebook-f" class="i"></i>
+     <i class="fa-brands fa-twitter" class="i"></i>
+     <i class="fa-brands fa-instagram" class="i"></i>
+     <i class="fa-brands fa-linkedin-in" class="i"></i>
+    </div>
+<div class="f3">
+<h4>
+    Explore
+</h4>
+<p>Cookies</p>
+<p>About</p>
+<p>Privacy Policy</p>
+<p>Licences</p>
+</div>
+  <div>
+  <h4>Important</h4>
+  <p>Timeline</p>
+  <p>News</p>
+  <p>Licensing</p>
+  <p>Insight</p>
+  </div>
+  <div>
+    <h4>Categories</h4>
+    <p>Strategy</p>
+    <p>Terms</p>
+    <p>Services</p>
+    <p>FAQ</p>
+  </div>
+</div>
+<hr>
+<div class="fff">
+    <div>
+<h6 >copyright 2025 shufflehoun.All rights reserved.</h6></div>
+<div >
+    <a href="#home">Home</a>
+    <a href="#About">About</a>
+    <a href="#Services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+</div>
+</div>
+</div>
+<script>
+    AOS.init();
+  </script>
+</body>
+</html>
